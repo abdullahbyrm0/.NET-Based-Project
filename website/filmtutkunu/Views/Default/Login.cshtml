@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4114cf82b1.js" crossorigin="anonymous"></script>
+
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="~/login.css">
+
+    <title>Login</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="field">
+            -
+            @using (Html.BeginForm("Login", "Default", FormMethod.Post))
+            {
+                <h2><span class="oto-log"></span></h2>
+                <table>
+
+                    <tr>
+                        <td><label for="username"><i class="fas fa-user"></i> Kullanıcı adı:</label></td>
+                        <td> <input id="kullaniciAdi" class="yazı" type="text" placeholder="Username" name="kullaniciadi">   </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password"><i class="fas fa-lock"></i> Şifre:</label></td>
+                        <td> <input id="parola" class="yazı" type="password" placeholder="Password" name="şifre"> </td>
+                    </tr>
+
+                </table>
+
+
+
+                <button type="submit" class="log-button" id="but">Giriş Yap</button>
+            }
+                <p>Hala siteye kayıtlı değil misiniz ?  <a class="sign" href="/Default/Signin">Hemen Kaydolun</a></p>
+            </div>
+    </div>
+
+</body>
+</html>

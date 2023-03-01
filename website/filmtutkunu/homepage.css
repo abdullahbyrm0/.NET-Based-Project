@@ -1,0 +1,311 @@
+   
+ body{
+    margin: 0px;
+    padding: 0px;
+    background: url("Resimler/Arka-Plan-Görseli-1024x640.jpg" );
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+#secenek{
+    width: 21%;
+    background-color: rgba(251, 43, 81, 0.4) ;
+    color: white;
+    padding: 4px;
+}
+.navbar{
+z-index: 1;
+width: 100%;
+background-color: rgba(0, 0, 0,0.8);
+display: flex;
+justify-content: space-between;
+}
+.navbar a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: 0.5s;
+    margin: 10px 0px 0px 10px;
+    
+    }
+     .navbar a:hover{
+    color: #000;
+    background-color: lightgray;
+    border-radius: 10px;
+ }    
+.left{
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.right{
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+.navbar-2{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+position: relative;
+width: 50%;
+left: 25%;
+margin: 20px 0px;
+background-color: rgba(255, 255, 255, 0.1);
+text-align: center;
+
+}
+
+.navbar-2 a{
+    background-color: cadetblue; 
+padding: 10px;
+text-decoration: none;
+color: white;
+font-size: 14px;
+transition: 0.8s;
+border-radius: 5px;
+margin: 10px 10px 10px 0px;
+}
+.logo{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+.navbar-2 a:hover{
+    color: black;
+    background-color: cornflowerblue;
+   
+}
+ 
+.home{
+    display: flex;
+    flex-wrap: wrap;
+   flex-grow: 1;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    overflow: scroll;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px 0px ;
+    text-align: center;
+}
+
+.home img{
+width: 100px;
+height: 150px;
+transition: 0.7s;
+margin-top: 20px;
+margin: 10px 20px;
+
+}
+.home a:hover img{
+    border: 2px white solid;
+    width: 150px;
+    height:200px ;
+}
+
+.home a{
+text-decoration: none;
+color: white;
+}
+.item{
+    width: 160px;
+}
+.page{
+    background-color: rgba(0, 0, 0,0.8);
+   position: relative;
+   display:block;
+   padding: 10px ;
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   text-decoration: none;
+   font-size: 24px;
+   overflow: hidden;
+   transition: 0.2s;
+   font-family: 'Zen Kurenaido', sans-serif;
+   text-align: center;
+
+}
+
+#footer{
+    position: relative;
+    left: 25%;
+    width: 50%;
+
+height: 100px;
+background-color: rgba(255, 255, 255, 0.1);
+margin: 25px 0px;
+text-align: center;
+}
+#footer a{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: 0.5s;
+    margin-top: 20px;
+    
+    }
+    
+   #footer a:nth-child(1):hover{
+    color: #D02F76;
+    margin: 0px 20px;
+   }
+   #footer a:nth-child(2):hover{
+       color: #1DA1F2;
+     margin: 0px 20px; 
+   }
+   #footer a:nth-child(3):hover{
+       color: #4267B2;
+     margin: 0px 20px; 
+   }
+   #footer a:nth-child(4):hover{
+       color:#0280B5 ;
+     margin: 0px 20px; 
+   }
+
+
+   ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.01);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+@media screen and (max-width:800px) {
+    .navbar a{
+        font-size: 12px;
+        
+    }
+    .navbar img{
+        width: 100px;
+    }
+    .navbar-2 a{
+
+        font-size: 12px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+    .navbar-2{
+
+        flex-direction: column;
+        align-content: center;
+        align-items: stretch;
+        margin: 0px ;
+    }
+    .home div{
+        width: 50%;
+        margin: 0px 0;
+        float: left;
+        text-align: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        
+        }
+        .home img{
+            width: 60%;
+            height: 150px;
+            transition: 0.7s;
+            margin-top: 20px;
+            }
+     .sayfaresim:hover img{
+         border: 2px white solid;
+        width: 80%;
+          height:180px ;
+         }
+         #footer a{
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            transition: 0.5s;
+            margin-top: 10px;
+            
+            }
+            
+}
+@media screen and (max-width:500px) {
+    .navbar a{
+        font-size: 8px;
+        
+    }
+    .navbar img{
+        width: 70px;
+    }
+    .navbar-2 a{
+
+        font-size: 8px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+    .home div{
+        width: 50%;
+        margin: 0px 0;
+        float: left;
+        text-align: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        
+        }
+        .home img{
+            width: 50%;
+            height: 150px;
+            transition: 0.7s;
+            margin-top: 20px;
+            }
+     .sayfaresim:hover img{
+         border: 2px white solid;
+        width: 70%;
+          height:130px ;
+         }
+         #footer a{
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 8px;
+            transition: 0.5s;
+            margin-top: 10px;
+            
+            }
+
+    .navbar-2{
+
+        flex-direction: column;
+        align-content: center;
+        align-items: stretch;
+        margin: 0px ;
+    }
+    .navbar-2 a{
+        margin: 10px 10px 0px 0px;
+    }       
+}

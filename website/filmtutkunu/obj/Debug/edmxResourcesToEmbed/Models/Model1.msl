@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="filmtutkunuModelStoreContainer" CdmEntityContainer="filmtutkunuEntities">
+    <EntitySetMapping Name="kullanicibilgileri">
+      <EntityTypeMapping TypeName="filmtutkunuModel.kullanicibilgileri">
+        <MappingFragment StoreEntitySet="kullanicibilgileri">
+          <ScalarProperty Name="kullaniciid" ColumnName="kullaniciid" />
+          <ScalarProperty Name="isim" ColumnName="isim" />
+          <ScalarProperty Name="soyisim" ColumnName="soyisim" />
+          <ScalarProperty Name="kullaniciadi" ColumnName="kullaniciadi" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="şifre" ColumnName="şifre" />
+          <ScalarProperty Name="dogumtarihi" ColumnName="dogumtarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
